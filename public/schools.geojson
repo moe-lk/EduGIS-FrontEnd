@@ -1,0 +1,1247 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "YAKKADUWA PRIMARY COLLEGE",
+        "School Census": "01559",
+        "Zone": "NEGOMBO",
+        "Number of Students": 54,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.920152777777,
+          7.0894819444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "WIJERATNAM HINDU CENTRAL COLLEGE",
+        "School Census": "01576",
+        "Zone": "NEGOMBO",
+        "Number of Students": 127,
+        "Type": "1AB",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.837226111111,
+          7.2139336111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "WELIHENA SIN MIXD JUNIOR COLLEGE",
+        "School Census": "01411",
+        "Zone": "NEGOMBO",
+        "Number of Students": 33,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.859153888888,
+          7.2440630555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "WELIHENA ROMAN CATHLIC VIDYALAYA",
+        "School Census": "01584",
+        "Zone": "NEGOMBO",
+        "Number of Students": 3,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.882749444444,
+          7.0659827777777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "THOPPU ROMAN CATHOLIC MAHA VIDYALAYA",
+        "School Census": "01583",
+        "Zone": "NEGOMBO",
+        "Number of Students": 16,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.867685555555,
+          7.2630016666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "THILLANDUWA JUNIOR SECONDARY COLLEGE",
+        "School Census": "01350",
+        "Zone": "NEGOMBO",
+        "Number of Students": 15,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.843390555555,
+          7.2043458333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "THALAHENA MAHA VIDYALAYA",
+        "School Census": "01349",
+        "Zone": "NEGOMBO",
+        "Number of Students": 40,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.825556111111,
+          7.1640930555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.SEBASTIAN'S MAHA VIDYALAYA",
+        "School Census": "01540",
+        "Zone": "NEGOMBO",
+        "Number of Students": 32,
+        "Type": "1AB",
+        "School gender": "Boys"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.889825277777,
+          7.0479163888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.SEBASTIAN'S MAHA VIDYALAYA",
+        "School Census": "01359",
+        "Zone": "NEGOMBO",
+        "Number of Students": 60,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.837752499999,
+          7.2169133333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.SEBASTIAN MAHA VIDYALAYA",
+        "School Census": "01377",
+        "Zone": "NEGOMBO",
+        "Number of Students": 28,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.860735833333,
+          7.2129711111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.PETER'S MAHA VIDYALAYA",
+        "School Census": "01344",
+        "Zone": "NEGOMBO",
+        "Number of Students": 43,
+        "Type": "1AB",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.838276944444,
+          7.2118883333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.PETER'S JUNIOR SECONDARY COLLEGE",
+        "School Census": "01357",
+        "Zone": "NEGOMBO",
+        "Number of Students": 28,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.819830833333,
+          7.1819194444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.NICHOLA'S SINHALA VIDYALAYA",
+        "School Census": "01370",
+        "Zone": "NEGOMBO",
+        "Number of Students": 47,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.831797222222,
+          7.2035858333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.MARY'S MAHA VIDYALAYA",
+        "School Census": "01541",
+        "Zone": "NEGOMBO",
+        "Number of Students": 1,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.892388055555,
+          7.0780641666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.MARY'S MAHA VIDYALAYA",
+        "School Census": "01342",
+        "Zone": "NEGOMBO",
+        "Number of Students": 136,
+        "Type": "1AB",
+        "School gender": "Boys"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.834526388888,
+          7.2099383333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.JOSHEP'S JUNIOR SECONDARY COLLEGE",
+        "School Census": "01361",
+        "Zone": "NEGOMBO",
+        "Number of Students": 70,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.841040833333,
+          7.2108338888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.JOSEPHS JUNIOR SECONDARY COLLEGE",
+        "School Census": "01388",
+        "Zone": "NEGOMBO",
+        "Number of Students": 28,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.880642499999,
+          7.2374119444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.FRANCIS SALES JUNIOR SECONDARY COLLEGE",
+        "School Census": "01372",
+        "Zone": "NEGOMBO",
+        "Number of Students": 30,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.848265277777,
+          7.2344558333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.ANTHONY'S JUNIOR SECONDARY COLLEGE",
+        "School Census": "01347",
+        "Zone": "NEGOMBO",
+        "Number of Students": 8,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.838609722222,
+          7.1173233333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.ANNE'S PRIMARY COLLEGE",
+        "School Census": "01356",
+        "Zone": "NEGOMBO",
+        "Number of Students": 155,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.847700833333,
+          7.2463416666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST.ANN'S MAHA VIDYALAYA",
+        "School Census": "01345",
+        "Zone": "NEGOMBO",
+        "Number of Students": 42,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.860289444444,
+          7.1860922222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST. JOHN THE BAPTIST MAHA VIDYALAYA",
+        "School Census": "01542",
+        "Zone": "NEGOMBO",
+        "Number of Students": 26,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.894693888888,
+          7.0362127777777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST MARY'S MODEL SCHOOL",
+        "School Census": "01561",
+        "Zone": "NEGOMBO",
+        "Number of Students": 54,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.908553611111,
+          7.0491105555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST MARY'S MAHA VIDYALAYA",
+        "School Census": "01008",
+        "Zone": "NEGOMBO",
+        "Number of Students": 31,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.857937499999,
+          7.0420836111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ST JOSEPH'S JUNIOR SECONDARY COLLEGE",
+        "School Census": "01548",
+        "Zone": "NEGOMBO",
+        "Number of Students": 82,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.895598333333,
+          7.0847363888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "SRI RATHANASARA PRIMARY COLLEGE",
+        "School Census": "01410",
+        "Zone": "NEGOMBO",
+        "Number of Students": 30,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.91857,
+          7.1965508333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "SRI PANGNANANADA PRIMARY COLLEGE",
+        "School Census": "01612",
+        "Zone": "NEGOMBO",
+        "Number of Students": 134,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.897313611111,
+          7.1308566666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "SRI JOTHIRATHANA JUNIOR SECONDARY COLLEGE",
+        "School Census": "01382",
+        "Zone": "NEGOMBO",
+        "Number of Students": 32,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.877931111111,
+          7.1170913888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "SRI DHARMARAKSHITHA PRIMARY COLLEGE",
+        "School Census": "01564",
+        "Zone": "NEGOMBO",
+        "Number of Students": 24,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.931153055555,
+          7.0309730555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "SIRIWARDHANA PRIMARY COLLEGE",
+        "School Census": "01556",
+        "Zone": "NEGOMBO",
+        "Number of Students": 98,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.917887777777,
+          7.060765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "SENANAYAKA MAHA VIDYALAYA",
+        "School Census": "01547",
+        "Zone": "NEGOMBO",
+        "Number of Students": 73,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.908298055555,
+          7.1001447222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "SEEDUWA ROMAN CATHLICPRIMARY COLLEGE",
+        "School Census": "01417",
+        "Zone": "NEGOMBO",
+        "Number of Students": 106,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.887191388888,
+          7.1332580555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "RADDOLUGAMA JUNIOR SECONDARY COLLEGE",
+        "School Census": "01419",
+        "Zone": "NEGOMBO",
+        "Number of Students": 149,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.899507222222,
+          7.1396783333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "PITIPANA MAHA VIDYALAYA",
+        "School Census": "01346",
+        "Zone": "NEGOMBO",
+        "Number of Students": 31,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.817287222222,
+          7.195855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "PAMUNUGAMA MAHA VIDYALAYA",
+        "School Census": "01003",
+        "Zone": "NEGOMBO",
+        "Number of Students": 88,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.857051388888,
+          7.0728063888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "PALLANSENA ROMAN CATHOLIC PRIMARY COLLEGE",
+        "School Census": "01367",
+        "Zone": "NEGOMBO",
+        "Number of Students": 54,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.850128611111,
+          7.2647916666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "PALANGATHURAYA SINHALA MIXED JUNIOR COLLEGE",
+        "School Census": "01365",
+        "Zone": "NEGOMBO",
+        "Number of Students": 52,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.843562499999,
+          7.2500991666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "OUR LADY OF MIRACLE MAHA VIDYALAYA",
+        "School Census": "01362",
+        "Zone": "NEGOMBO",
+        "Number of Students": 47,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.835743055555,
+          7.2070547222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "NIWANDAMA ROMAN CATHOLIC PRIMARY COLLEGE",
+        "School Census": "01572",
+        "Zone": "NEGOMBO",
+        "Number of Students": 74,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.930524444444,
+          7.08864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "NIMALA MARIYA GIRLS' COLLEGE",
+        "School Census": "01538",
+        "Zone": "NEGOMBO",
+        "Number of Students": 29,
+        "Type": "1AB",
+        "School gender": "Girls"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.883381666666,
+          7.0921236111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "NIMALA MARIA MAHA VIDYALAYA",
+        "School Census": "01358",
+        "Zone": "NEGOMBO",
+        "Number of Students": 5,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.858032499999,
+          7.1989644444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "NARANGODAPALUWA PRIMARY COLLEGE",
+        "School Census": "01569",
+        "Zone": "NEGOMBO",
+        "Number of Students": 106,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.9333625,
+          7.0475883333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "MUDALIDU DAVID MENDIS MAHA VIDYALAYA",
+        "School Census": "01378",
+        "Zone": "NEGOMBO",
+        "Number of Students": 133,
+        "Type": "1AB",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.869658333333,
+          7.2264330555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "LANKA SABHA VIDYALAYA",
+        "School Census": "01552",
+        "Zone": "NEGOMBO",
+        "Number of Students": 13,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.883539166666,
+          7.0956366666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "KOTUGODA ROMAN CATHLIC PRIMARY COLLEGE",
+        "School Census": "01395",
+        "Zone": "NEGOMBO",
+        "Number of Students": 47,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.917992777777,
+          7.1206547222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "KONDAGAMULLA JUNIOR SECONDARY COLLEGE",
+        "School Census": "01396",
+        "Zone": "NEGOMBO",
+        "Number of Students": 10,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.905632777777,
+          7.223155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "KIMBULAPITIYA ROMAN CATHOLIC PRIMARY COLLEGE",
+        "School Census": "01392",
+        "Zone": "NEGOMBO",
+        "Number of Students": 69,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.895616944444,
+          7.2057094444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "KALAELIYA PRIMARY COLLEGE",
+        "School Census": "01567",
+        "Zone": "NEGOMBO",
+        "Number of Students": 26,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.881598055555,
+          7.0597930555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "KADANA ST. SEBASTIAN'S GIRLS' PRIMARY COLLEGE",
+        "School Census": "01566",
+        "Zone": "NEGOMBO",
+        "Number of Students": 112,
+        "Type": "Type 3",
+        "School gender": "Girls"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.889182777777,
+          7.0455858333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "JINARAJA PRIMARY COLLEGE",
+        "School Census": "01610",
+        "Zone": "NEGOMBO",
+        "Number of Students": 2,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.926340833333,
+          7.0833516666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "JAYANTHI JUNIOR SECONDARY COLLEGE",
+        "School Census": "01550",
+        "Zone": "NEGOMBO",
+        "Number of Students": 90,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.887306666666,
+          7.0769986111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "HOLY ROSARY VIDYALAYA",
+        "School Census": "01553",
+        "Zone": "NEGOMBO",
+        "Number of Students": 9,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.882656666666,
+          7.1076583333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "GONSALVEZ MAHA VIDYALAYA",
+        "School Census": "01005",
+        "Zone": "NEGOMBO",
+        "Number of Students": 54,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.848327222222,
+          7.0896472222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ETHGALAR JUNIOR COLLEGE",
+        "School Census": "01385",
+        "Zone": "NEGOMBO",
+        "Number of Students": 17,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.873539722222,
+          7.2508222222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "DUWANA SINHALA MIXED VIDYALAYA",
+        "School Census": "01363",
+        "Zone": "NEGOMBO",
+        "Number of Students": 4,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.844744166666,
+          7.2663866666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "DUWA JUNIOR SECONDARY COLLEGE",
+        "School Census": "01366",
+        "Zone": "NEGOMBO",
+        "Number of Students": 6,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.821742222222,
+          7.2073819444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "DHARMASHOKA MAHA VIDYALAYA",
+        "School Census": "01551",
+        "Zone": "NEGOMBO",
+        "Number of Students": 68,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.905938333333,
+          7.0454952777777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "DHARMARATHANA JUNIOR SECONDARY COLLEGE",
+        "School Census": "01560",
+        "Zone": "NEGOMBO",
+        "Number of Students": 26,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.914541944444,
+          7.0511988888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "DHARMARAJA PRIMARY COLLEGE",
+        "School Census": "01558",
+        "Zone": "NEGOMBO",
+        "Number of Students": 14,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.947879166666,
+          7.0546099999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "DAVID DE SILVA JUNIOR SECONDARY COLLEGE",
+        "School Census": "01401",
+        "Zone": "NEGOMBO",
+        "Number of Students": 43,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.914419444444,
+          7.1798958333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "DALUPOTHA MAHA VIDYALAYA",
+        "School Census": "01352",
+        "Zone": "NEGOMBO",
+        "Number of Students": 174,
+        "Type": "1C",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.849704444444,
+          7.2272319444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "BATUWATTA PRIMARY COLLEGE",
+        "School Census": "01571",
+        "Zone": "NEGOMBO",
+        "Number of Students": 251,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.928228888888,
+          7.05796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "BATAGAMA NORTH ROMAN CATHOLIC PRIMARY COLLEGE",
+        "School Census": "01570",
+        "Zone": "NEGOMBO",
+        "Number of Students": 26,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.897873333333,
+          7.0632025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "BASILICA PRIMARY COLLEGE",
+        "School Census": "01573",
+        "Zone": "NEGOMBO",
+        "Number of Students": 225,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.9171075,
+          7.0285541666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "BANDARANAYAKE JUNIOR SECONDARY COLLEGE",
+        "School Census": "01408",
+        "Zone": "NEGOMBO",
+        "Number of Students": 63,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.872782777777,
+          7.1367347222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ANDIAMBALAMA ROMAN CATHLICPRIMARY COLLEGE",
+        "School Census": "01414",
+        "Zone": "NEGOMBO",
+        "Number of Students": 34,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.897944722222,
+          7.1861138888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ANDIAMBALAMA BUDDHIST PRIMARY COLLEGE",
+        "School Census": "01384",
+        "Zone": "NEGOMBO",
+        "Number of Students": 44,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.907288611111,
+          7.18721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "AMANDOLUWAROMAN CATHLICPRIMARY COLLEGE",
+        "School Census": "01413",
+        "Zone": "NEGOMBO",
+        "Number of Students": 73,
+        "Type": "Type 3",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.880976111111,
+          7.1520230555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "School Name": "ALAWATHUPITIYA JUNIOR SECONDARY COLLEGE",
+        "School Census": "01383",
+        "Zone": "NEGOMBO",
+        "Number of Students": 18,
+        "Type": "Type 2",
+        "School gender": "Mixed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.88682,
+          7.1133694444444
+        ]
+      }
+    }
+  ]
+}
