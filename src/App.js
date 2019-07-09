@@ -196,12 +196,27 @@ class App extends Component {
 
                 <div className="row" style={{height: 100 + 'px'}}>
 
+                    <div className="row">
+                        <p> Legend </p>
+                    </div>
 
                     <div className="row">
-                        <p> Legend </p> <br />
-                        <input type="checkbox" name="schooltype" id="type-ab" /><label htmlFor="scales">Type</label>
-
+                        <input type="checkbox" name="cluster-enable" id="cluster-enable" /><label htmlFor="cluster-enable">Enable Cluster Group</label>
                     </div>
+
+                    <div className="row">
+                        <input type="checkbox" name="type-1ab" id="type-1ab" /><label htmlFor="type-1ab">Type 1AB</label>
+                        <input type="checkbox" name="type-1c" id="type-1c" /><label htmlFor="type-1c">Type 1C</label>
+                        <input type="checkbox" name="type-2" id="type-2" /><label htmlFor="type-2">Type 2</label>
+                        <input type="checkbox" name="type-3" id="type-3" /><label htmlFor="type-3">Type 3</label>
+                    </div>
+
+                    <div className="row">
+                        <input type="checkbox" name="gender-mixed" id="gender-mixed" /><label htmlFor="gender-mixed">Mixed</label>
+                        <input type="checkbox" name="gender-girls" id="gender-girls" /><label htmlFor="gender-girls">Girls</label>
+                        <input type="checkbox" name="gender-boys" id="gender-boys" /><label htmlFor="gender-boys">Boys</label>
+                    </div>
+
 
                 </div>
 
