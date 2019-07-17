@@ -18,14 +18,22 @@ class App extends Component {
             lng: 80.771800,
             zoom: 8,
             provinceData: null,
+            allSchools: null,
             schools: null,
-            markerClusterGroups: [[]]
+            markerClusterGroups: [[]],
+            gender: {'gender-mixed': true, 'gender-boys': true, 'gender-girls': true},
+            type: {'type-1ab': true, 'type-1c': true, 'type-2': true, 'type-3': true},
+            enableClustering: true
             // bounds: Bounds([[9.849070, 79.175759], [5.870270, 82.814672]])
+
         };
 
         this.getStyle = this.getStyle.bind(this);
         this.createMarkers = this.createMarkers.bind(this);
         this.getMarkerIconStyle = this.getMarkerIconStyle.bind(this);
+        //this.filterSchoolTypes = this.filterSchoolTypes.bind(this);
+        //this.filterSchoolGender = this.filterSchoolGender.bind(this);
+        this.filterSchool = this.filterSchool.bind(this);
     }
 
     componentWillMount() {
@@ -41,7 +49,7 @@ class App extends Component {
         axios.get('./schools.geojson').then(response => {
 
             console.log(response);
-            this.setState({schools: response.data.features});
+            this.setState({schools: response.data.features, allSchools: response.data.features});
 
 
         });
@@ -161,6 +169,125 @@ class App extends Component {
     /*************End Event handling functions************************************/
 
 
+    onChangeClustering(e) {
+
+        this.setState({enableClustering: !this.state.enableClustering});
+
+    }
+
+    onChangeCheckbox(e) {
+
+        console.log(e.target);
+        console.log(e.target.name + " "+ e.target.value);
+        console.log(e.target.id);
+
+
+        if (e.target.name === "type") {
+
+            let tempType = this.state.type;
+            tempType[e.target.id] = !this.state.type[e.target.id];
+            this.setState({type: tempType},this.filterSchool(tempType, this.state.gender));
+
+        } else if (e.target.name === "gender") {
+
+            let tempGender = this.state.gender;
+            tempGender[e.target.id] = !this.state.gender[e.target.id];
+            this.setState({gender: tempGender},this.filterSchool(this.state.type, tempGender));
+
+        }
+
+
+    }
+
+    filterSchool(type, gender) {
+
+        let schoolTemp = [];
+        let schoolTemp2 = [];
+
+        this.state.allSchools.map((school) => {
+
+            //console.log(school);
+
+            if (school.properties.Type === "1AB" && type['type-1ab'] === true) {
+
+                schoolTemp.push(school);
+
+            } else if (school.properties.Type === "1C" && type['type-1c'] === true) {
+
+                schoolTemp.push(school);
+
+            } else if (school.properties.Type === "Type 2" && type['type-2'] === true) {
+
+                schoolTemp.push(school);
+
+            } else if (school.properties.Type === "Type 3" && type['type-3'] === true) {
+
+                schoolTemp.push(school);
+
+            } else {
+
+                //console.log(school.properties.Type);
+            }
+
+        });
+
+        schoolTemp.map((school) => {
+
+            //console.log(school);
+
+            if (school.properties['School gender'] === "Mixed" && gender['gender-mixed'] === true) {
+
+                schoolTemp2.push(school);
+
+            } else if (school.properties['School gender'] === "Girls" && gender['gender-girls'] === true) {
+
+                schoolTemp2.push(school);
+
+            } else if (school.properties['School gender'] === "Boys" && gender['gender-boys'] === true) {
+
+                schoolTemp2.push(school);
+
+            }
+
+        });
+
+
+        console.log("schoold count 2:"+ schoolTemp2.length);
+        this.setState({schools: schoolTemp2});
+
+
+    }
+
+    // filterSchoolGender(gender) {
+    //
+    //
+    //     let schoolTemp = [];
+    //     console.log("schoold count 1:"+ this.state.schools.length);
+    //     this.state.schools.map((school) => {
+    //
+    //         //console.log(school);
+    //
+    //         if (school.properties['School gender'] === "Mixed" && gender['gender-mixed'] === true) {
+    //
+    //             schoolTemp.push(school);
+    //
+    //         } else if (school.properties['School gender'] === "Girls" && gender['gender-girls'] === true) {
+    //
+    //             schoolTemp.push(school);
+    //
+    //         } else if (school.properties['School gender'] === "Boys" && gender['gender-boys'] === true) {
+    //
+    //             schoolTemp.push(school);
+    //
+    //         }
+    //
+    //     });
+    //     console.log("schoold count 2:"+ schoolTemp.length);
+    //     this.setState({schools: schoolTemp}, this.forceUpdate());
+    //
+    // }
+
+
 
     render() {
         const position = [this.state.lat, this.state.lng];
@@ -201,20 +328,20 @@ class App extends Component {
                     </div>
 
                     <div className="row">
-                        <input type="checkbox" name="cluster-enable" id="cluster-enable" /><label htmlFor="cluster-enable">Enable Cluster Group</label>
+                        <input type="checkbox" name="cluster-enable" id="cluster-enable" onChange={this.onChangeClustering.bind(this)} defaultChecked={this.state.enableClustering}/><label htmlFor="cluster-enable">Enable Marker Cluster</label>
                     </div>
 
                     <div className="row">
-                        <input type="checkbox" name="type-1ab" id="type-1ab" /><label htmlFor="type-1ab">Type 1AB</label>
-                        <input type="checkbox" name="type-1c" id="type-1c" /><label htmlFor="type-1c">Type 1C</label>
-                        <input type="checkbox" name="type-2" id="type-2" /><label htmlFor="type-2">Type 2</label>
-                        <input type="checkbox" name="type-3" id="type-3" /><label htmlFor="type-3">Type 3</label>
+                        <input type="checkbox" name="type" id="type-1ab" value="Type 1AB" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.type['type-1ab']}/><label htmlFor="type-1ab">Type 1AB</label>
+                        <input type="checkbox" name="type" id="type-1c" value="Type 1C" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.type['type-1c']}/><label htmlFor="type-1c">Type 1C</label>
+                        <input type="checkbox" name="type" id="type-2" value="Type 2" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.type['type-2']}/><label htmlFor="type-2">Type 2</label>
+                        <input type="checkbox" name="type" id="type-3" value="Type 3" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.type['type-3']}/><label htmlFor="type-3">Type 3</label>
                     </div>
 
                     <div className="row">
-                        <input type="checkbox" name="gender-mixed" id="gender-mixed" /><label htmlFor="gender-mixed">Mixed</label>
-                        <input type="checkbox" name="gender-girls" id="gender-girls" /><label htmlFor="gender-girls">Girls</label>
-                        <input type="checkbox" name="gender-boys" id="gender-boys" /><label htmlFor="gender-boys">Boys</label>
+                        <input type="checkbox" name="gender" id="gender-mixed" value="Mixed" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.gender['gender-mixed']}/><label htmlFor="gender-mixed">Mixed</label>
+                        <input type="checkbox" name="gender" id="gender-girls" value="Girls" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.gender['gender-girls']}/><label htmlFor="gender-girls">Girls</label>
+                        <input type="checkbox" name="gender" id="gender-boys" value="Boys" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.gender['gender-boys']}/><label htmlFor="gender-boys">Boys</label>
                     </div>
 
 
@@ -233,7 +360,7 @@ class App extends Component {
 
                     {/*onClustermouseout={this.onclusterMouseOut.bind(this)}*/}
 
-                    {this.state.schools && <MarkerClusterGroup
+                    {this.state.enableClustering && this.state.schools && <MarkerClusterGroup
                         iconCreateFunction={createClusterCustomIcon}
                         disableClusteringAtZoom={12}
                         zoomToBoundsOnClick={true}>
@@ -241,6 +368,9 @@ class App extends Component {
                         {this.createMarkers()}
 
                     </MarkerClusterGroup>}
+
+                    {!this.state.enableClustering && this.state.schools && this.createMarkers()}
+
 
 
                 </LeafletMap>

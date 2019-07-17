@@ -11,12 +11,15 @@ body {
 }
 
 .markerClusterSmall {
-  border-radius: 20px;
-  font-size: 0.6vw;
-  color: #fff;
-  font-weight: 900;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8vw;
+  color: #000;
+  font-weight: 700;
   font-family: Open Sans;
   text-transform: uppercase;
+  background-color: yellow;
 }
 .markerClusterMedium {
   border-radius: 50%;
@@ -30,20 +33,26 @@ body {
   background-color: yellow;
 }
 .markerClusterLarge {
-  border-radius: 70px;
-  font-size: 0.6vw;
-  color: #fff;
-  font-weight: 900;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8vw;
+  color: #000;
+  font-weight: 700;
   font-family: Open Sans;
   text-transform: uppercase;
+  background-color: yellow;
 }
 .markerClusterLargeXL {
-  border-radius: 70px;
-  font-size: 0.6vw;
-  color: #fff;
-  font-weight: 900;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8vw;
+  color: #000;
+  font-weight: 700;
   font-family: Open Sans;
   text-transform: uppercase;
+  background-color: yellow;
 }
 .markerClusterLabel {
   display: flex;
