@@ -59,3 +59,37 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.col {
+  padding: 1rem;
+  background-color: #33b5e5;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+.col-map{
+  padding: 0;
+  background-color: #33b5e5;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+/*@media (min-width: 768px) { ... }*/
+
+/*// Large devices (desktops, 992px and up)*/
+/*@media (min-width: 992px) { ... }*/
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+/*@media (min-width: 1200px) { ... }*/
