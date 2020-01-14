@@ -10,6 +10,7 @@ import SearchResult from './model/SearchResult';
 import SearchResultList from './model/SearchResultList';
 // import './index.css';
 
+
 class GridLayout extends Component {
 
 
@@ -23,18 +24,20 @@ class GridLayout extends Component {
             allSchools: null,
             schools: null,
             markerClusterGroups: [[]],
-            gender: {'gender-mixed': true, 'gender-boys': true, 'gender-girls': true},
-            type: {'type-1ab': true, 'type-1c': true, 'type-2': true, 'type-3': true},
+            gender: {'Mixed': true, 'Boys': true, 'Girls': true},
+            type: {'1AB': false, '1C': false, 'Type 2': false, 'Type 3': false},
+            category: {'N': false, 'P': false},
             enableClustering: true
 
 
         };
 
-
         this.getStyle = this.getStyle.bind(this);
         this.createMarkers = this.createMarkers.bind(this);
         this.getMarkerIconStyle = this.getMarkerIconStyle.bind(this);
         // this.filterSchool = this.filterSchool.bind(this);
+        this.searchSchool = this.searchSchool.bind(this);
+
     }
 
 
@@ -44,20 +47,40 @@ class GridLayout extends Component {
         axios.get('./provinces1.geojson').then(response => {
 
             console.log(response);
+            console.log(process.env.REACT_APP_API_ENDPOINT);
             this.setState({provinceData: response.data}, this.forceUpdate());
-
-        });
-
-        axios.get('./schools.geojson').then(response => {
-
-            console.log(response);
-            this.setState({schools: response.data.features, allSchools: response.data.features});
-
 
         });
 
     }
 
+    componentDidMount() {
+
+        let type_array=[];
+        let gender_array=[];
+        let category_array=[];
+
+        Object.keys(this.state.type).map((_type) => {
+            if (this.state.type[_type] === true) {
+                type_array.push(_type);
+            }
+        });
+
+        Object.keys(this.state.gender).map((_gender) => {
+            if (this.state.gender[_gender] === true) {
+                gender_array.push(_gender);
+            }
+        });
+
+        Object.keys(this.state.category).map((_category) => {
+            if (this.state.category[_category] === true) {
+                category_array.push(_category);
+            }
+        });
+
+
+        this.searchSchool(type_array, gender_array, category_array);
+    }
 
     getMarkerIconStyle(schoolType) {
 
@@ -96,7 +119,6 @@ class GridLayout extends Component {
 
     getStyle(feature) {
 
-
         return {
             color: '#000000',
             weight: 1,
@@ -110,18 +132,19 @@ class GridLayout extends Component {
         let markers = [];
 
         this.state.schools.map((school, index) => {
+
             markers.push(
-                <Marker key={school.properties["School Census"]}
+                <Marker key={school.properties["schoolCensus"]}
                         position={[school.geometry.coordinates[1], school.geometry.coordinates[0]]}
-                        icon={this.getMarkerIconStyle(school.properties["Type"])}>
+                        icon={this.getMarkerIconStyle(school.properties["schoolType"])}>
                     {school.properties && <Popup>
                         <div>
-                            School Census: {school.properties["School Census"]} <br/>
-                            School Name: {school.properties["School Name"]} <br/>
-                            Number of Students: {school.properties["Number of Students"]} <br/>
-                            School gender: {school.properties["School gender"]} <br/>
-                            School Type: {school.properties["Type"]} <br/>
-                            Zone: {school.properties["Zone"]} <br/>
+                            School Census: {school.properties["schoolCensus"]} <br/>
+                            School Name: {school.properties["schoolName"]} <br/>
+                            Number of Students: {school.properties["numberOfStudents"]} <br/>
+                            School Gender Composition: {school.properties["gender"]} <br/>
+                            School Type: {school.properties["schoolType"]} <br/>
+                            Zone: {school.properties["schoolZone"]} <br/>
                         </div>
 
                     </Popup>}
@@ -134,6 +157,74 @@ class GridLayout extends Component {
 
     }
 
+    onChangeCheckbox(e) {
+
+        //console.log(e.target);
+        //console.log(e.target.name + " "+ e.target.value);
+        console.log(e.target.id);
+
+        let type_array=[];
+        let gender_array=[];
+        let category_array=[];
+
+        if (e.target.name === "type") {
+
+            let tempType = this.state.type;
+            tempType[e.target.id] = !this.state.type[e.target.id];
+
+            this.setState({type: tempType});
+
+        } else if (e.target.name === "gender") {
+
+            let tempGender = this.state.gender;
+            tempGender[e.target.id] = !this.state.gender[e.target.id];
+            this.setState({gender: tempGender});
+
+        } else if (e.target.name === "category") {
+
+            let tempCategory = this.state.category;
+            tempCategory[e.target.id] = !this.state.category[e.target.id];
+            this.setState({category: tempCategory});
+        }
+
+        Object.keys(this.state.type).map((_type) => {
+            if (this.state.type[_type] === true) {
+                type_array.push(_type);
+            }
+        });
+
+        Object.keys(this.state.gender).map((_gender) => {
+            if (this.state.gender[_gender] === true) {
+                gender_array.push(_gender);
+            }
+        });
+
+        Object.keys(this.state.category).map((_category) => {
+            if (this.state.category[_category] === true) {
+                category_array.push(_category);
+            }
+        });
+
+        this.searchSchool(type_array, gender_array, category_array);
+
+    }
+
+
+    searchSchool(schoolTypes, schoolGender, schoolCategory) {
+
+        axios.post(process.env.REACT_APP_API_ENDPOINT+"/schools/filter/geo", {
+            type: schoolTypes,
+            gender: schoolGender,
+            category: schoolCategory
+        }).then(response=> {
+            //console.log(response.data.features);
+            this.setState({schools: response.data.features});
+        }).catch(error => {
+            console.log(error.data);
+        });
+
+
+    }
 
     render() {
         const position = [this.state.lat, this.state.lng];
@@ -198,30 +289,30 @@ class GridLayout extends Component {
                             <p align="center"> School Type </p>
 
                             <div className="custom-control custom-checkbox">
-                                <input className="custom-control-input" type="checkbox" name="type" id="type-1ab"
-                                       value="Type 1AB"/>
-                                <label className="custom-control-label" htmlFor="type-1ab">Type 1AB</label>
+                                <input className="custom-control-input" type="checkbox" name="type" id="1AB"
+                                       value="Type 1AB" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.type['1AB']}/>
+                                <label className="custom-control-label" htmlFor="1AB">Type 1AB</label>
 
                             </div>
 
                             <div className="custom-control custom-checkbox">
-                                <input className="custom-control-input" type="checkbox" name="type" id="type-1c"
-                                       value="Type 1C"/>
-                                <label className="custom-control-label" htmlFor="type-1c">Type 1C</label>
+                                <input className="custom-control-input" type="checkbox" name="type" id="1C"
+                                       value="Type 1C" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.type['1C']}/>
+                                <label className="custom-control-label" htmlFor="1C">Type 1C</label>
 
                             </div>
 
                             <div className="custom-control custom-checkbox">
-                                <input className="custom-control-input" type="checkbox" name="type" id="type-2"
-                                       value="Type 2"/>
-                                <label className="custom-control-label" htmlFor="type-2">Type 2</label>
+                                <input className="custom-control-input" type="checkbox" name="type" id="Type 2"
+                                       value="Type 2" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.type['Type 2']}/>
+                                <label className="custom-control-label" htmlFor="Type 2">Type 2</label>
 
                             </div>
 
                             <div className="custom-control custom-checkbox">
-                                <input className="custom-control-input" type="checkbox" name="type" id="type-3"
-                                       value="Type 3"/>
-                                <label className="custom-control-label" htmlFor="type-3">Type 3</label>
+                                <input className="custom-control-input" type="checkbox" name="type" id="Type 3"
+                                       value="Type 3" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.type['Type 3']}/>
+                                <label className="custom-control-label" htmlFor="Type 3">Type 3</label>
                             </div>
 
 
@@ -230,17 +321,17 @@ class GridLayout extends Component {
 
                             <div className="custom-control custom-checkbox">
                                 <input className="custom-control-input" type="checkbox" name="category"
-                                       id="category-provincial"
-                                       value="Category 1"/>
-                                <label className="custom-control-label" htmlFor="category-provincial">Provincial
+                                       id="P"
+                                       value="P" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.category['P']}/>
+                                <label className="custom-control-label" htmlFor="P">Provincial
                                     School</label>
                             </div>
 
                             <div className="custom-control custom-checkbox">
                                 <input className="custom-control-input" type="checkbox" name="category"
-                                       id="category-national"
-                                       value="Category 2"/>
-                                <label className="custom-control-label" htmlFor="category-national">National
+                                       id="N"
+                                       value="N" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.category['N']}/>
+                                <label className="custom-control-label" htmlFor="N">National
                                     School</label>
                             </div>
 
@@ -250,21 +341,21 @@ class GridLayout extends Component {
                             <p align="center"> Schools Gender Composition </p>
 
                             <div className="custom-control custom-checkbox">
-                                <input className="custom-control-input" type="checkbox" name="gender" id="gender-mixed"
-                                       value="Mixed"/>
-                                <label className="custom-control-label" htmlFor="gender-mixed">Mixed Schools</label>
+                                <input className="custom-control-input" type="checkbox" name="gender" id="Mixed"
+                                       value="Mixed" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.gender['Mixed']}/>
+                                <label className="custom-control-label" htmlFor="Mixed">Mixed Schools</label>
                             </div>
 
                             <div className="custom-control custom-checkbox">
-                                <input className="custom-control-input" type="checkbox" name="gender" id="gender-girls"
-                                       value="Girls"/>
-                                <label className="custom-control-label" htmlFor="gender-girls">Girls Schools</label>
+                                <input className="custom-control-input" type="checkbox" name="gender" id="Girls"
+                                       value="Girls" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.gender['Girls']}/>
+                                <label className="custom-control-label" htmlFor="Girls">Girls Schools</label>
                             </div>
 
                             <div className="custom-control custom-checkbox">
-                                <input className="custom-control-input" type="checkbox" name="gender" id="gender-boys"
-                                       value="Boys"/>
-                                <label className="custom-control-label" htmlFor="gender-boys">Boys Schools</label>
+                                <input className="custom-control-input" type="checkbox" name="gender" id="Boys"
+                                       value="Boys" onChange={this.onChangeCheckbox.bind(this)} defaultChecked={this.state.gender['Boys']}/>
+                                <label className="custom-control-label" htmlFor="Boys">Boys Schools</label>
                             </div>
 
 
